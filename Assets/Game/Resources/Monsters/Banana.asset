@@ -12,16 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07cba79e1d1e6a842b10375ea857ea10, type: 3}
   m_Name: Banana
   m_EditorClassIdentifier: 
-  name: Banana
+  name: Ludroth
   description: Base off Walrein
   frontSprite: {fileID: 1498745959, guid: 01b0cce05765c284db52161ebba5e777, type: 3}
   backSprite: {fileID: 422748469, guid: 01b0cce05765c284db52161ebba5e777, type: 3}
   type1: 3
   type2: 0
-  maxHp: 0
-  attack: 0
-  defense: 0
-  eleAttack: 0
-  eleDefense: 0
-  speed: 0
-  learnableMoves: []
+  maxHp: 110
+  attack: 80
+  defense: 90
+  eleAttack: 95
+  eleDefense: 90
+  speed: 65
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: f94d9cc2f286a774d8fb43a8002dbd90, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 6e951a1b9b5c48e4abaebcad0973da0f, type: 2}
+    level: 1

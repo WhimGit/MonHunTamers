@@ -13,15 +13,23 @@ MonoBehaviour:
   m_Name: Kirin
   m_EditorClassIdentifier: 
   name: Kirin
-  description: Base off Zapdos
+  description: Base off Raikou
   frontSprite: {fileID: 1325100280, guid: 01b0cce05765c284db52161ebba5e777, type: 3}
   backSprite: {fileID: -2099347956, guid: 01b0cce05765c284db52161ebba5e777, type: 3}
-  type1: 6
-  type2: 7
-  maxHp: 0
-  attack: 0
-  defense: 0
-  eleAttack: 0
-  eleDefense: 0
-  speed: 0
-  learnableMoves: []
+  type1: 4
+  type2: 0
+  maxHp: 90
+  attack: 115
+  defense: 100
+  eleAttack: 85
+  eleDefense: 75
+  speed: 115
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: 6e951a1b9b5c48e4abaebcad0973da0f, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: abf5c939d205a174b882db421148d243, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 93c5e607f1fe66247a4e0ee025fbe264, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 6dc83acd0d7e9d44ab75f67044c8f018, type: 2}
+    level: 1

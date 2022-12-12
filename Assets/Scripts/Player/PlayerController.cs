@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class PlayerController : MonoBehaviour
 {
     public float speed;
     public LayerMask solidObjectLayer;
+    public GameObject pauseMenu;
+
+    public event Action OnEncountered;
 
     private bool moving;
     private Vector2 userInput;
@@ -14,14 +18,22 @@ public class PlayerController : MonoBehaviour
 
     public GameObject battleSystem;
 
+    public Monster collidedMonster;
+
     void Awake()
     {
         anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
-    void Update()
+    public void HandleUpdate()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Time.timeScale = 0;
+            pauseMenu.SetActive(true);       
+        }
+
         if (!moving)
         {
             userInput.x = Input.GetAxisRaw("Horizontal");
@@ -79,7 +91,10 @@ public class PlayerController : MonoBehaviour
     {
         if(col.tag == "Monster")
         {
-            battleSystem.SetActive(true);
+            anim.SetBool("moving", false);
+            collidedMonster = col.gameObject.GetComponent<WildMonsters>().GetWildMonster();
+            OnEncountered();
+            Destroy(col.gameObject);
         }
     }
 }

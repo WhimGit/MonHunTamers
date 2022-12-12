@@ -24,4 +24,8 @@ MonoBehaviour:
   eleAttack: 0
   eleDefense: 0
   speed: 0
-  learnableMoves: []
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: 0e00be0d26fcb914d86875bf6f517991, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 93c5e607f1fe66247a4e0ee025fbe264, type: 2}
+    level: 1

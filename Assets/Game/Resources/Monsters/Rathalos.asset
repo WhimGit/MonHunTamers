@@ -18,10 +18,14 @@ MonoBehaviour:
   backSprite: {fileID: 752407923, guid: 01b0cce05765c284db52161ebba5e777, type: 3}
   type1: 2
   type2: 10
-  maxHp: 0
-  attack: 0
-  defense: 0
-  eleAttack: 0
-  eleDefense: 0
-  speed: 0
-  learnableMoves: []
+  maxHp: 78
+  attack: 84
+  defense: 78
+  eleAttack: 109
+  eleDefense: 85
+  speed: 100
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: 0e00be0d26fcb914d86875bf6f517991, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 9c925452047630a47bfc0b2a0fdc4592, type: 2}
+    level: 1
